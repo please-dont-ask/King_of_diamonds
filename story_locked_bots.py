@@ -81,7 +81,7 @@ def Daimon(players,prev_guess,result,clause,last_winner):
             return 0
     else:
         if prev_guess//2 < int(result):
-            if (prev_guess/0.8)/2 == (int(result)-1):
+            if (prev_guess/0.8)/2 == (int(result)):
                 return prev_guess//2
             elif (prev_guess/0.8)/2 < int(result)-1:
                 return prev_guess//2 -1
