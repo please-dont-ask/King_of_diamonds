@@ -135,4 +135,4 @@ def Asuma(players,prev_guess,result,clause,last_winner):
         elif clause < 3:
             return prev_guess - 1
         else:
-            return 34
+            return int(0.8*((last_winner*4+100)/5) - 1)
