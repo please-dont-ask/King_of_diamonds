@@ -56,7 +56,7 @@ def Kuzuryu(players,prev_guess,result,clause,last_winner):
         if clause == 1:
             return int(result) + 1
         elif clause < 3:
-            return 10
+            return int(0.8*(result/2)) + 1
         else:
             return 20
                    
@@ -64,7 +64,7 @@ def Daimon(players,prev_guess,result,clause,last_winner):
     if prev_guess == -1:
         return 40 
     elif len(players) == 3:
-        if players[2] == -8 and -9 in players:
+        if players[2] >= -8 and -9 in players:
             return 62
         else:
             return 1
