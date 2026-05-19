@@ -54,6 +54,8 @@ def point_counter(current,result):
         c_diff = abs(result-i)
         if c_diff < diff:
             diff = c_diff
+    if len(set(current)) == 1:
+        diff = 101
     return diff
         
 def kill(players,current,result,diff):
